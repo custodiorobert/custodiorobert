@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="application.css">
+</head>
+<body>
+  <div class="container">
+    <h1>A simple 💼 Job Application Tracker</h1>
+
+    <form id="jobForm">
+      <input type="text" id="company" placeholder="Company Name" required>
+      <input type="text" id="role" placeholder="Role / Position" required>
+      <select id="status" required>
+        <option value="">Application Status</option>
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Rejected">Rejected</option>
+        <option value="Offer">Offer</option>
+      </select>
+      <button type="submit">Add Job</button>
+    </form>
+
+    <h2>My Applications</h2>
+    <table id="jobTable">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Jobs will appear here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="tracker.js"></script>
+</body>
+</html>

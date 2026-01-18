@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Joshua Custodio | Portfolio</title>
+    <style>
+        :root {
+            --primary: #2d3e50;
+            --accent: #4CAF50;
+            --light: #f4f4f4;
+            --dark: #333;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* Header / Hero */
+        header {
+            background: var(--primary);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p.title {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 0;
+            background: var(--white);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        .personal-details ul {
+            list-style: none;
+            padding: 0;
+            background: var(--light);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .personal-details li {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill-tag {
+            background: var(--primary);
+            color: var(--white);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .soft-skill-tag {
+            background: var(--accent);
+            color: var(--white);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Education & Certs */
+        .timeline-item {
+            border-left: 4px solid var(--accent);
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .timeline-item h3 {
+            margin: 0 0 5px 0;
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        /* Contact Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        
+        .contact-item a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .projects-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background-color: var(--accent);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .projects-btn:hover {
+            background-color: #3e8e41;
+            transform: translateY(-2px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Robert Joshua Custodio</h1>
+            <p class="title">Computer Science Student</p>
+            <p style="max-width: 700px; margin: 20px auto;">
+                Motivated Computer Science student with growing experience in software and hardware development, including circuit design, microcontroller projects, and troubleshooting.
+            </p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="bio">
+                    <p>I am eager to apply academic knowledge to real-world projects and continue building practical skills in a collaborative tech environment. My background includes working with programming languages as well as hardware integration.</p>
+                </div>
+                <div class="personal-details">
+                    <ul>
+                        <li><strong>Nationality:</strong> Filipino</li>
+                        <li><strong>Age:</strong> 23 (Born May 27, 2002)</li>
+                        <li><strong>Location:</strong> Mayuro Rosario Batangas 4225</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <p>
+        To view my interactive projects.
+        </p>
+        <a href="login.html" class="projects-btn">View Projects</a>
+    </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">C#</span>
+                
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Visual Studio Code</span>
+                <span class="skill-tag">Eclipse</span>
+            </div>
+
+            <h3 style="margin-top: 20px;">Soft Skills</h3>
+            <div class="skills-container">
+                <span class="soft-skill-tag">Teamwork & Collaboration</span>
+                <span class="soft-skill-tag">Fast Learner</span>
+                <span class="soft-skill-tag">Attention to Detail</span>
+                <span class="soft-skill-tag">Project Support</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education & Certifications</h2>
+            
+            <div class="timeline-item">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <span class="date">Teodoro M. Luansing College of Rosario</span>
+                <p>Rosario, Province of Batangas, Philippines</p>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
+            
+            <div class="timeline-item">
+                <h3>Microsoft Artificial Intelligence Course (Azure AI Fundamentals)</h3>
+                <span class="date">September 2025</span>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Developing Designs for User Interface</h3>
+                <span class="date">September 2025</span>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Building full-stack MEAN application: A beginner to intermediate guide with MVC</h3>
+                <span class="date">December 2024</span>
+            </div>
+
+            <div class="timeline-item">
+                <h3>AI and IoT: Shaping the future of Smart Connectivity</h3>
+                <span class="date">December 2024</span>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Learning Web Development from Scratch: The Ultimate Boot camp</h3>
+                <span class="date">November 2024</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Phone:</strong> 09690484074
+                </div>
+                <div class="contact-item">
+                    <strong>Email:</strong> 
+                    <a href="mailto:custodiorobert79@gmail.com?subject=Inquiry%20from%20Portfolio%20Website">
+                    custodiorobert79@gmail.com
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub:</strong> <a href="https://custodiorobert.github.io" target="_blank">custodiorobert.github.io</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Address:</strong> Mayuro Rosario Batangas 4225
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
